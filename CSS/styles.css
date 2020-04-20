@@ -149,6 +149,7 @@ font-size: 2.5vw;
 font-weight: bold;
 padding: 10px;
 text-align: center;
+width: 100%;
 }
 
 p{
@@ -232,16 +233,32 @@ p{
   display: grid;
   grid-template-columns: auto auto auto;
   margin-top: 15vw;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15vw;
 
 }
 .actualimgbox{
-  width: 25vw;
+  width: 15vw;
   height: 100%;
   border-radius: 50%;
   transition: border-radius ease 0.5s;
 }
 .actualimgbox:hover{
   border-radius: 5px;
+}
+.middlerow{
+  display: grid;
+  grid-template-columns: auto;
+  width: 75%;
+  margin: 15vw auto;
+  align-items: center;
+}
+.middlelinks{
+  color: #363636;
+
+
 }
 .imgbox{
   margin: 0;
@@ -375,7 +392,7 @@ margin: auto;
   -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.5);
   box-shadow: 1px 1px 1px rgba(0,0,0,.5); **/
 
-  width: 30vw;
+  width: 10vw;
   height: 20%;
 
   border-radius: 1px;
@@ -403,9 +420,11 @@ margin: auto;
 }
 .maincolumns{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto ;
+  grid-gap: 1vw;
   text-align: center;
-  margin-bottom: 5vw;
+  margin: 0 auto;
+  width: 100%;
   padding: 0;
 
 
@@ -522,15 +541,15 @@ border-radius: 5px;
 .linktext{
 font-family: 'Cairo', sans-serif;
 color: black;
-font-size: 1.3vw;
+font-size: 1.5vw;
 
 
 }
 .linkactual{
   color: #202040;
   margin: 0 auto;
-  font-size: 2.7vw;
-  font-family: 'Merienda', cursive;
+  font-size: 2vw;
+  font-family: 'Quicksand', sans-serif;
 
 
   display: flex;
@@ -664,11 +683,23 @@ position: justify;
 .mainimg{
   width:100%;
 }
+#describe{
+  display: grid;
+  width: 80%;
+  margin: 5vw auto 5vw;
+  align-items: justify;
+  font-family: 'Quicksand', sans-serif;
+}
+.describetext{
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3vw;
+}
 .imgrow{
   text-align: center;
 }
 .hello{
-font-family: 'Merienda', cursive;
+font-family: 'Quicksand', sans-serif;
 margin: 0 auto;
 color: #a8d3da;
 font-style: italic;
@@ -743,12 +774,18 @@ text-shadow: 2px 2px 5px #4cbbb9;
 .bottomleft{
   font-family: 'Cairo', sans-serif;
   margin-top: 5px;
-  width: 100%;
+  margin-right: 1px;
+  margin-left: 1px
+  width: 95%;
 }
 .bottomleftbox{
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+}
+div.bottomleftbox{
+  margin-left: 1px;
+  margin-right: 1px;
 }
 }
 div.uwaga{
